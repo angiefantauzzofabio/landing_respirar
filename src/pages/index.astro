@@ -1,12 +1,22 @@
 ---
 import '../styles/global.css';
 ---
-<body class="bg-[#86a67a] text-[#485749] font-sans min-h-screen overflow-x-hidden">
-  
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-[#86a67a] text-[#485749] font-sans min-h-screen overflow-x-hidden"
+style="background: linear-gradient(to bottom, #8BBF83 30%, #709B91 45%, #7DA6C9 58%, #709B91 71%, #659368 82%);">
+	
 	<img 
 		src="/enredadera.png" 
 		alt="Enredadera cayendo"
-		class="hidden md:block fixed left-0 top-0 h-[110vh] w-auto object-cover object-top pointer-events-none select-none z-30 py-0 px-0"
+		class="hidden md:block absolute left-0 top-0 h-[110vh] w-auto object-cover object-top pointer-events-none select-none z-30 py-0 px-0"
 	/>
   
 	<nav class="relative z-30 flex justify-between md:justify-end items-center px-8 md:px-12 py-8 w-full">
@@ -50,7 +60,7 @@ import '../styles/global.css';
 	  </div>
 	</main>
   
-	<div class="fixed left-0 w-full px-0 z-10 pointer-events-none">
+	<div class="absolute left-0 w-full px-0 z-10 pointer-events-none">
 		<div class="h-[5px] bg-[#E2F774]/80 w-full"></div>
 	</div>
 
@@ -73,5 +83,179 @@ import '../styles/global.css';
 		  });
 		}
 	</script>
+
+	<section class="relative z-10 py-24 px-8 md:px-20 lg:px-40 max-w-7xl mx-auto overflow-visible">
   
+		<h2 class="text-4xl md:text-5xl font-black text-[#3d5143] text-center mb-16 uppercase tracking-tight">
+		  Sobre el proyecto
+		</h2>
+	  
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-24 items-stretch">
+		  
+		  <div class="flex flex-col h-full bg-[#6b8c63] p-10 rounded-[3rem] shadow-lg text-white/90 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-default">
+			<h3 class="text-xl md:text-2xl font-bold mb-4 text-white">Infraestructura verde</h3>
+			<p class="leading-relaxed text-sm md:text-base flex-1">
+			  La vegetación puede actuar como una barrera natural que ayuda a filtrar contaminantes del aire 
+			  y mejorar la calidad ambiental en espacios urbanos.
+			</p>
+		  </div>
+	  
+		  <div class="flex flex-col h-full bg-[#6b8c63] p-10 rounded-[3rem] shadow-lg text-white/90 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-default">
+			<h3 class="text-xl md:text-2xl font-bold mb-4 text-white">Soluciones basadas en la naturaleza</h3>
+			<p class="leading-relaxed text-sm md:text-base flex-1">
+			  El proyecto explora estrategias que utilizan procesos naturales para enfrentar desafíos urbanos 
+			  como la contaminación y la pérdida de biodiversidad.
+			</p>
+		  </div>
+	  
+		  <div class="flex flex-col h-full bg-[#6b8c63] p-10 rounded-[3rem] shadow-lg text-white/90 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-default">
+			<h3 class="text-xl md:text-2xl font-bold mb-4 text-white">Escuelas como laboratorios vivos</h3>
+			<p class="leading-relaxed text-sm md:text-base flex-1">
+			  Los patios escolares se transforman en espacios de aprendizaje donde estudiantes y docentes 
+			  interactúan con jardines y barreras verdes.
+			</p>
+		  </div>
+	  
+		  <div class="flex flex-col h-full bg-[#6b8c63] p-10 rounded-[3rem] shadow-lg text-white/90 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-default">
+			<h3 class="text-xl md:text-2xl font-bold mb-4 text-white">Colaboración e investigación</h3>
+			<p class="leading-relaxed text-sm md:text-base flex-1">
+			  Breathe / Respirar reúne universidades y comunidades para desarrollar 
+			  y evaluar soluciones ambientales en contextos reales.
+			</p>
+		  </div>
+	  
+		</div>
+	  
+		<div class="absolute left-1/2 -translate-x-1/2 w-[100vw] z-10 pointer-events-none">
+		  <div class="h-[5px] bg-[#E2F774]/80 w-full"></div>
+		</div>
+	  
+	  </section>
+
+	  <section class="relative z-10 py-16 px-8 md:px-20 overflow-visible">
+  
+		<div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 max-w-6xl mx-auto mb-12">
+		  
+		  <div class="w-16 h-16 md:w-20 md:h-20 bg-[#91CC88] rounded-full flex items-center justify-center transition-transform hover:scale-110 cursor-pointer">
+			<img src="/icons/Calidad visual.png" alt="Visión" class="w-8 md:w-10 opacity-80" />
+		  </div>
+	  
+		  <div class="w-16 h-16 md:w-20 md:h-20 bg-[#91CC88] rounded-full flex items-center justify-center transition-transform hover:scale-110 cursor-pointer">
+			<img src="/icons/Empleo.png" alt="Comunidad" class="w-8 md:w-10 opacity-80" />
+		  </div>
+	  
+		  <div class="w-16 h-16 md:w-20 md:h-20 bg-[#91CC88] rounded-full flex items-center justify-center  transition-transform hover:scale-110 cursor-pointer">
+			<img src="/icons/Reciclar.png" alt="Sostenibilidad" class="w-8 md:w-10 opacity-80" />
+		  </div>
+	  
+		  <div class="w-16 h-16 md:w-20 md:h-20 bg-[#91CC88] rounded-full flex items-center justify-center  transition-transform hover:scale-110 cursor-pointer">
+			<img src="/icons/Bienestar.png" alt="Salud" class="w-8 md:w-10 opacity-80" />
+		  </div>
+	  
+		  <div class="w-16 h-16 md:w-20 md:h-20 bg-[#91CC88] rounded-full flex items-center justify-center  transition-transform hover:scale-110 cursor-pointer">
+			<img src="/icons/biodiversidad.png" alt="Red" class="w-8 md:w-10 opacity-80" />
+		  </div>
+	  
+		  <div class="w-16 h-16 md:w-20 md:h-20 bg-[#91CC88] rounded-full flex items-center justify-center  transition-transform hover:scale-110 cursor-pointer relative shadow-lg shadow-white/10">
+			<img src="/icons/Calidad de aire.png" alt="Calidad Aire" class="w-8 md:w-10 opacity-90" />
+		  </div>
+	  
+		</div>
+	  
+		<div class="absolute left-1/2 -translate-x-1/2 w-[100vw] bottom-0 z-10 pointer-events-none">
+		  <div class="h-[5px] bg-[#E2F774]/80 w-full"></div>
+		</div>
+	  
+	  </section>
+
+	  <section id="impacto" class="relative w-full flex flex-col items-center pt-16 pb-24">
+  
+		<h2 class="text-4xl md:text-6xl font-black text-[#3d5143] text-center mb-10 tracking-tighter">
+		  IMPACTO
+		</h2>
+	  
+		<div class="relative w-full overflow-hidden min-h-[500px] flex items-center py-12 md:py-20">
+		  
+		  <div class="absolute inset-0 z-0">
+			<img src="/hoja textura.png" alt="Textura" class="w-full h-full object-cover" />
+			<div class="absolute inset-0 bg-[#3d5143]/45"></div>
+		  </div>
+	  
+		  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-20">
+			<div class="swiper swiper-impacto !overflow-visible">
+			  <div class="swiper-wrapper">
+				
+				<div class="swiper-slide">
+				  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+					
+					<div class="flex justify-center order-1">
+					  <img src="/FOTO 1.png" class="rounded-[2rem] shadow-2xl w-full max-w-md aspect-video object-cover border-2 border-white/20" />
+					</div>
+	  
+					<div class="flex flex-col justify-center text-white text-center md:text-left order-2">
+					  <h3 class="text-2xl md:text-4xl  mb-4 leading-none">
+						Titulo
+					  </h3>
+					  <p class="text-lg md:text-2xl leading-snug">
+						Desde 2017, se esta implementando a traves de una serie de proyectos realizados en conjunto por las universidades de Sheffield y Buenos Aires, en colaboracion con escuelas y comunidades.
+					  </p>
+					</div>
+	  
+				  </div>
+				</div>
+	  
+			  </div>
+	  
+			  <div class="swiper-button-prev !text-[#E2F774] !hidden lg:!flex"></div>
+			  <div class="swiper-button-next !text-[#E2F774] !hidden lg:!flex"></div>
+			  <div class="swiper-pagination !-bottom-10"></div>
+			</div>
+		  </div>
+		</div>
+	  
+		<div class="relative w-full mt-20 h-[5px]">
+		   <div class="absolute left-1/2 -translate-x-1/2 w-[110vw] bottom-0 z-10 pointer-events-none">
+			  <div class="h-[5px] bg-[#E2F774]/80 w-full"></div>
+		   </div>
+		</div>
+	  
+	  </section>
+	  
+	  <style is:global>
+		/* Color de los puntitos activos */
+		.swiper-pagination-bullet { background: white; opacity: 0.5; }
+		.swiper-pagination-bullet-active { background: #E2F774 !important; opacity: 1; }
+		
+		/* En móviles ocultamos las flechas laterales para que no tapen la foto 
+		   y el usuario usa el dedo (swap) */
+		@media (max-width: 768px) {
+		  .swiper-button-next, .swiper-button-prev { display: none !important; }
+		}
+	  </style>
+
+		<script is:inline>
+			function initSwiper() {
+			if (typeof Swiper !== 'undefined') {
+				new Swiper(".mySwiperImpacto", {
+				loop: true,
+				grabCursor: true, // Esto permite arrastrar con el mouse
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+				// Esto permite usar las flechitas del teclado también
+				keyboard: {
+					enabled: true,
+				},
+				});
+			} else {
+				setTimeout(initSwiper, 100);
+			}
+			}
+			initSwiper();
+		</script>
+
+	
+
   </body>
+
